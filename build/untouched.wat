@@ -8,7 +8,6 @@
  (type $i32_i32_i32_i32_=>_none (func (param i32 i32 i32 i32)))
  (type $none_=>_i32 (func (result i32)))
  (type $i32_i32_i32_=>_i32 (func (param i32 i32 i32) (result i32)))
- (import "index" "log" (func $assembly/index/log (param i32)))
  (import "env" "abort" (func $~lib/builtins/abort (param i32 i32 i32 i32)))
  (global $~lib/rt/itcms/total (mut i32) (i32.const 0))
  (global $~lib/rt/itcms/threshold (mut i32) (i32.const 0))
@@ -22,28 +21,24 @@
  (global $~lib/rt/tlsf/ROOT (mut i32) (i32.const 0))
  (global $~lib/ASC_LOW_MEMORY_LIMIT i32 (i32.const 0))
  (global $~lib/ASC_SHRINK_LEVEL i32 (i32.const 0))
- (global $~lib/rt/__rtti_base i32 (i32.const 656))
- (global $~lib/memory/__data_end i32 (i32.const 684))
- (global $~lib/memory/__stack_pointer (mut i32) (i32.const 17068))
- (global $~lib/memory/__heap_base i32 (i32.const 17068))
+ (global $~lib/rt/__rtti_base i32 (i32.const 544))
+ (global $~lib/memory/__data_end i32 (i32.const 572))
+ (global $~lib/memory/__stack_pointer (mut i32) (i32.const 16956))
+ (global $~lib/memory/__heap_base i32 (i32.const 16956))
  (memory $0 1)
- (data (i32.const 12) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\10\00\00\00f\00i\00z\00z\00b\00u\00z\00z\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 60) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\08\00\00\00f\00i\00z\00z\00\00\00\00\00")
- (data (i32.const 92) "\1c\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\08\00\00\00b\00u\00z\00z\00\00\00\00\00")
- (data (i32.const 124) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00(\00\00\00A\00l\00l\00o\00c\00a\00t\00i\00o\00n\00 \00t\00o\00o\00 \00l\00a\00r\00g\00e\00\00\00\00\00")
- (data (i32.const 188) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00 \00\00\00~\00l\00i\00b\00/\00r\00t\00/\00i\00t\00c\00m\00s\00.\00t\00s\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 256) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 288) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 316) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00$\00\00\00I\00n\00d\00e\00x\00 \00o\00u\00t\00 \00o\00f\00 \00r\00a\00n\00g\00e\00\00\00\00\00\00\00\00\00")
- (data (i32.const 380) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\14\00\00\00~\00l\00i\00b\00/\00r\00t\00.\00t\00s\00\00\00\00\00\00\00\00\00")
- (data (i32.const 432) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 460) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\1e\00\00\00~\00l\00i\00b\00/\00r\00t\00/\00t\00l\00s\00f\00.\00t\00s\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
- (data (i32.const 524) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00*\00\00\00O\00b\00j\00e\00c\00t\00 \00a\00l\00r\00e\00a\00d\00y\00 \00p\00i\00n\00n\00e\00d\00\00\00")
- (data (i32.const 588) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00(\00\00\00O\00b\00j\00e\00c\00t\00 \00i\00s\00 \00n\00o\00t\00 \00p\00i\00n\00n\00e\00d\00\00\00\00\00")
- (data (i32.const 656) "\03\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 12) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00(\00\00\00A\00l\00l\00o\00c\00a\00t\00i\00o\00n\00 \00t\00o\00o\00 \00l\00a\00r\00g\00e\00\00\00\00\00")
+ (data (i32.const 76) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00 \00\00\00~\00l\00i\00b\00/\00r\00t\00/\00i\00t\00c\00m\00s\00.\00t\00s\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 144) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 176) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 204) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00$\00\00\00I\00n\00d\00e\00x\00 \00o\00u\00t\00 \00o\00f\00 \00r\00a\00n\00g\00e\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 268) ",\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\14\00\00\00~\00l\00i\00b\00/\00r\00t\00.\00t\00s\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 320) "\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 348) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00\1e\00\00\00~\00l\00i\00b\00/\00r\00t\00/\00t\00l\00s\00f\00.\00t\00s\00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
+ (data (i32.const 412) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00*\00\00\00O\00b\00j\00e\00c\00t\00 \00a\00l\00r\00e\00a\00d\00y\00 \00p\00i\00n\00n\00e\00d\00\00\00")
+ (data (i32.const 476) "<\00\00\00\00\00\00\00\00\00\00\00\01\00\00\00(\00\00\00O\00b\00j\00e\00c\00t\00 \00i\00s\00 \00n\00o\00t\00 \00p\00i\00n\00n\00e\00d\00\00\00\00\00")
+ (data (i32.const 544) "\03\00\00\00 \00\00\00\00\00\00\00 \00\00\00\00\00\00\00\00\00\00\00\00\00\00\00")
  (table $0 1 funcref)
- (export "minusOne" (func $assembly/index/minusOne))
- (export "fizzbuzz" (func $assembly/index/fizzbuzz))
+ (export "readMemory" (func $assembly/index/readMemory))
  (export "__new" (func $~lib/rt/itcms/__new))
  (export "__pin" (func $~lib/rt/itcms/__pin))
  (export "__unpin" (func $~lib/rt/itcms/__unpin))
@@ -51,42 +46,20 @@
  (export "__rtti_base" (global $~lib/rt/__rtti_base))
  (export "memory" (memory $0))
  (start $~start)
- (func $assembly/index/minusOne (param $0 i32) (result i32)
-  local.get $0
-  call $assembly/index/log
-  local.get $0
+ (func $start:assembly/index
+  i32.const 2
+  memory.grow
+  drop
+  i32.const 0
+  i32.const 21
+  i32.store8
   i32.const 1
-  i32.sub
+  i32.const 99
+  i32.store8
  )
- (func $assembly/index/fizzbuzz (param $0 i32) (result i32)
+ (func $assembly/index/readMemory (param $0 i32) (result i32)
   local.get $0
-  i32.const 15
-  i32.rem_s
-  i32.const 0
-  i32.eq
-  if
-   i32.const 32
-   return
-  end
-  local.get $0
-  i32.const 3
-  i32.rem_s
-  i32.const 0
-  i32.eq
-  if
-   i32.const 80
-   return
-  end
-  local.get $0
-  i32.const 5
-  i32.rem_s
-  i32.const 0
-  i32.eq
-  if
-   i32.const 112
-   return
-  end
-  i32.const 0
+  i32.load8_u
  )
  (func $~lib/rt/itcms/Object#set:nextWithColor (param $0 i32) (param $1 i32)
   local.get $0
@@ -148,7 +121,7 @@
     i32.eqz
     if
      i32.const 0
-     i32.const 208
+     i32.const 96
      i32.const 159
      i32.const 16
      call $~lib/builtins/abort
@@ -214,7 +187,7 @@
    i32.eqz
    if
     i32.const 0
-    i32.const 208
+    i32.const 96
     i32.const 127
     i32.const 18
     call $~lib/builtins/abort
@@ -231,7 +204,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 208
+   i32.const 96
    i32.const 131
    i32.const 16
    call $~lib/builtins/abort
@@ -253,8 +226,8 @@
   i32.load
   i32.gt_u
   if
-   i32.const 336
-   i32.const 400
+   i32.const 224
+   i32.const 288
    i32.const 22
    i32.const 28
    call $~lib/builtins/abort
@@ -320,7 +293,7 @@
    i32.eqz
    if (result i32)
     i32.const 0
-    i32.const 208
+    i32.const 96
     i32.const 147
     i32.const 30
     call $~lib/builtins/abort
@@ -446,7 +419,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 268
    i32.const 14
    call $~lib/builtins/abort
@@ -466,7 +439,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 270
    i32.const 14
    call $~lib/builtins/abort
@@ -529,7 +502,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 284
    i32.const 14
    call $~lib/builtins/abort
@@ -661,7 +634,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 201
    i32.const 14
    call $~lib/builtins/abort
@@ -678,7 +651,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 203
    i32.const 14
    call $~lib/builtins/abort
@@ -758,7 +731,7 @@
    i32.eqz
    if
     i32.const 0
-    i32.const 480
+    i32.const 368
     i32.const 221
     i32.const 16
     call $~lib/builtins/abort
@@ -801,7 +774,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 233
    i32.const 14
    call $~lib/builtins/abort
@@ -819,7 +792,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 234
    i32.const 14
    call $~lib/builtins/abort
@@ -887,7 +860,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 251
    i32.const 14
    call $~lib/builtins/abort
@@ -992,7 +965,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 377
    i32.const 14
    call $~lib/builtins/abort
@@ -1035,7 +1008,7 @@
    i32.eqz
    if
     i32.const 0
-    i32.const 480
+    i32.const 368
     i32.const 384
     i32.const 16
     call $~lib/builtins/abort
@@ -1068,7 +1041,7 @@
    i32.eqz
    if
     i32.const 0
-    i32.const 480
+    i32.const 368
     i32.const 397
     i32.const 5
     call $~lib/builtins/abort
@@ -1311,7 +1284,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 559
    i32.const 3
    call $~lib/builtins/abort
@@ -1533,7 +1506,7 @@
     i32.eqz
     if
      i32.const 0
-     i32.const 208
+     i32.const 96
      i32.const 228
      i32.const 20
      call $~lib/builtins/abort
@@ -1641,8 +1614,8 @@
   i32.const 1073741820
   i32.ge_u
   if
-   i32.const 144
-   i32.const 480
+   i32.const 32
+   i32.const 368
    i32.const 458
    i32.const 30
    call $~lib/builtins/abort
@@ -1726,7 +1699,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 330
    i32.const 14
    call $~lib/builtins/abort
@@ -1791,7 +1764,7 @@
     i32.eqz
     if
      i32.const 0
-     i32.const 480
+     i32.const 368
      i32.const 343
      i32.const 18
      call $~lib/builtins/abort
@@ -1942,7 +1915,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 357
    i32.const 14
    call $~lib/builtins/abort
@@ -2051,7 +2024,7 @@
    i32.eqz
    if
     i32.const 0
-    i32.const 480
+    i32.const 368
     i32.const 496
     i32.const 16
     call $~lib/builtins/abort
@@ -2071,7 +2044,7 @@
   i32.eqz
   if
    i32.const 0
-   i32.const 480
+   i32.const 368
    i32.const 498
    i32.const 14
    call $~lib/builtins/abort
@@ -2348,8 +2321,8 @@
   i32.const 1073741804
   i32.ge_u
   if
-   i32.const 144
-   i32.const 208
+   i32.const 32
+   i32.const 96
    i32.const 260
    i32.const 31
    call $~lib/builtins/abort
@@ -2406,8 +2379,8 @@
    i32.const 3
    i32.eq
    if
-    i32.const 544
-    i32.const 208
+    i32.const 432
+    i32.const 96
     i32.const 337
     i32.const 7
     call $~lib/builtins/abort
@@ -2438,8 +2411,8 @@
   i32.const 3
   i32.ne
   if
-   i32.const 608
-   i32.const 208
+   i32.const 496
+   i32.const 96
    i32.const 351
    i32.const 5
    call $~lib/builtins/abort
@@ -2517,16 +2490,16 @@
  )
  (func $~lib/rt/__visit_globals (param $0 i32)
   (local $1 i32)
-  i32.const 336
+  i32.const 224
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 144
+  i32.const 32
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 544
+  i32.const 432
   local.get $0
   call $~lib/rt/itcms/__visit
-  i32.const 608
+  i32.const 496
   local.get $0
   call $~lib/rt/itcms/__visit
  )
@@ -2564,6 +2537,7 @@
   unreachable
  )
  (func $~start
+  call $start:assembly/index
   memory.size
   i32.const 16
   i32.shl
@@ -2572,13 +2546,13 @@
   i32.const 1
   i32.shr_u
   global.set $~lib/rt/itcms/threshold
-  i32.const 256
+  i32.const 144
   call $~lib/rt/itcms/initLazy
   global.set $~lib/rt/itcms/pinSpace
-  i32.const 288
+  i32.const 176
   call $~lib/rt/itcms/initLazy
   global.set $~lib/rt/itcms/toSpace
-  i32.const 432
+  i32.const 320
   call $~lib/rt/itcms/initLazy
   global.set $~lib/rt/itcms/fromSpace
  )
